@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Karthikeyan S | Java Backend Developer &amp; Spring Boot Engineer</title>
+  <meta name="title" content="Karthikeyan S | Java Backend Developer &amp; Spring Boot Engineer" />
+  <meta name="description" content="Portfolio of Karthikeyan S — Java Backend Developer with ~2 years of experience building scalable Spring Boot services, REST APIs, MySQL architectures, and intelligent digital systems. Immediate Joiner." />
+  <meta name="keywords" content="Karthikeyan S, Java Backend Developer, Spring Boot Developer, REST APIs, MySQL, Hibernate, JPA, Software Developer Portfolio, Immediate Joiner" />
+  <meta name="author" content="Karthikeyan S" />
+  <meta name="theme-color" content="#06070a" />
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Karthikeyan S | Java Backend Developer" />
+  <meta property="og:description" content="Building Scalable Backend Systems &amp; Intelligent Digital Experiences. Java 8, Spring Boot, Hibernate/JPA, REST APIs, MySQL." />
+  <meta property="og:image" content="assets/images/profile.jpg" />
+
+  <!-- Custom 3D Metallic KS Monogram Favicons -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="32x32" href="assets/favicon/favicon-32.png" />
+
+  <!-- Google Fonts: Syne (Display), Plus Jakarta Sans (Body), JetBrains Mono (Tech) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 CSS & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Custom Editorial 3D Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- Skip to Main Content (Accessibility) -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Custom Desktop Cursor -->
+  <div class="custom-cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="custom-cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- Custom Preloader -->
+  <div id="preloader" class="preloader" role="status" aria-label="Loading portfolio">
+    <div class="preloader-inner">
+      <div class="preloader-monogram" aria-hidden="true">
+        <span class="mono-k">K</span><span class="mono-s">S</span>
+      </div>
+      <div class="preloader-bar-track">
+        <div class="preloader-bar-fill" id="preloaderBar"></div>
+      </div>
+      <p class="preloader-caption font-mono">INITIALIZING BACKEND_PORTFOLIO // v2.0</p>
+    </div>
+  </div>
+
+  <!-- Animated Ambient Background & Interactive Canvas -->
+  <div class="ambient-scene" aria-hidden="true">
+    <canvas id="bgCanvas" class="bg-canvas"></canvas>
+    <div class="ambient-orb orb-orange"></div>
+    <div class="ambient-orb orb-violet"></div>
+    <div class="ambient-orb orb-cyan"></div>
+    <div class="perspective-grid"></div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar navbar-expand-lg" aria-label="Primary Navigation">
+      <div class="container">
+        <a class="navbar-brand brand-lockup" href="#hero" aria-label="Karthikeyan S Home">
+          <span class="brand-badge">
+            <img src="assets/favicon/favicon-32.png" alt="KS Monogram" width="28" height="28" class="brand-icon" />
+          </span>
+          <span class="brand-text">
+            <span class="brand-name">KARTHIKEYAN<span class="text-accent-orange">.S</span></span>
+            <span class="brand-sub font-mono">JAVA BACKEND DEV</span>
+          </span>
+        </a>
+
+        <div class="d-flex align-items-center gap-2 d-lg-none">
+          <a href="#contact" class="btn btn-sm btn-glow-orange px-3">Hire Me</a>
+          <button class="mobile-menu-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavDrawer" aria-controls="mobileNavDrawer" aria-label="Open navigation menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse justify-content-end" id="desktopNav">
+          <ul class="navbar-nav align-items-lg-center gap-lg-1 me-lg-4">
+            <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+          <div class="nav-actions d-flex align-items-center gap-2">
+            <a href="assets/resume/Karthikeyan_Resume.pdf" download="Karthikeyan_Resume.pdf" class="btn btn-outline-glass btn-sm">
+              <i class="bi bi-file-earmark-arrow-down me-1"></i>Resume
+            </a>
+            <a href="#contact" class="btn btn-glow-orange btn-sm">
+              <span>Let&rsquo;s Talk</span>
+              <i class="bi bi-arrow-up-right ms-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Offcanvas Navigation -->
+  <div class="offcanvas offcanvas-end mobile-drawer" tabindex="-1" id="mobileNavDrawer" aria-labelledby="mobileNavLabel">
+    <div class="offcanvas-header border-bottom border-subtle">
+      <div class="d-flex align-items-center gap-2" id="mobileNavLabel">
+        <img src="assets/favicon/favicon-32.png" alt="KS Logo" width="26" height="26" />
+        <span class="font-display fw-bold text-white">KARTHIKEYAN.S</span>
+      </div>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close navigation menu"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between">
+      <ul class="mobile-nav-list list-unstyled mb-4">
+        <li><a class="mobile-nav-link" href="#hero" data-bs-dismiss="offcanvas"><span class="font-mono text-accent-cyan">01.</span> Home</a></li>
+        <li><a class="mobile-nav-link" href="#about" data-bs-dismiss="offcanvas"><span class="font-mono text-accent-cyan">02.</span> About Me</a></li>
+        <li><a class="mobile-nav-link" href="#skills" data-bs-dismiss="offcanvas"><span class="font-mono text-accent-cyan">03.</span> Technical Skills</a></li>
+        <li><a class="mobile-nav-link" href="#experience" data-bs-dismiss="offcanvas"><span class="font-mono text-accent-cyan">04.</span> Experience</a></li>
+        <li><a class="mobile-nav-link" href="#projects" data-bs-dismiss="offcanvas"><span class="font-mono text-accent-cyan">05.</span> Featured Projects</a></li>
+        <li><a class="mobile-nav-link" href="#education" data-bs-dismiss="offcanvas"><span class="font-mono text-accent-cyan">06.</span> Education</a></li>
+        <li><a class="mobile-nav-link" href="#certificates" data-bs-dismiss="offcanvas"><span class="font-mono text-accent-cyan">07.</span> Certificates</a></li>
+        <li><a class="mobile-nav-link" href="#contact" data-bs-dismiss="offcanvas"><span class="font-mono text-accent-cyan">08.</span> Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-footer pt-3 border-top border-subtle">
+        <div class="status-pill mb-3">
+          <span class="status-dot"></span>
+          <span>Immediate Joiner &bull; Available</span>
+        </div>
+        <div class="d-grid gap-2 mb-3">
+          <a href="assets/resume/Karthikeyan_Resume.pdf" download="Karthikeyan_Resume.pdf" class="btn btn-glow-orange">
+            <i class="bi bi-download me-2"></i>Download Resume
+          </a>
+        </div>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="https://github.com/Karthi0609" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/karthikeyan-sailappan/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <!-- Hero Editorial Content -->
+          <div class="col-lg-7 order-2 order-lg-1">
+            <div class="hero-meta-row reveal-up">
+              <div class="status-pill" role="status">
+                <span class="status-dot"></span>
+                <span>Immediate Joiner</span>
+              </div>
+              <span class="hero-role-chip font-mono">
+                <i class="bi bi-terminal me-1 text-accent-cyan"></i>~2 Years Experience
+              </span>
+            </div>
+
+            <p class="hero-kicker font-mono reveal-up" data-delay="80">
+              KARTHIKEYAN S &mdash; <span class="text-gradient-tri">JAVA BACKEND DEVELOPER</span>
+            </p>
+
+            <h1 class="hero-headline reveal-up" data-delay="140">
+              Building <span class="text-gradient-warm">Scalable Backend</span> Systems &amp; <span class="text-gradient-cool">Intelligent Digital</span> Experiences.
+            </h1>
+
+            <p class="hero-subtitle reveal-up" data-delay="200">
+              Java Backend Developer &nbsp;|&nbsp; Spring Boot &nbsp;|&nbsp; REST APIs &nbsp;|&nbsp; MySQL
+            </p>
+
+            <div class="hero-typing-wrap font-mono reveal-up" data-delay="240">
+              <span class="typing-prefix text-accent-orange">&gt;_</span>
+              <span class="typing-label">Specializing in</span>
+              <span id="typingText" class="typing-dynamic text-accent-cyan"></span>
+              <span class="typing-caret" aria-hidden="true">|</span>
+            </div>
+
+            <p class="hero-intro reveal-up" data-delay="280">
+              Engineering resilient Java &amp; Spring Boot architectures, secure authentication flows, clean Hibernate/JPA persistence layers, and production-ready Linux deployments.
+            </p>
+
+            <!-- Hero CTAs -->
+            <div class="hero-cta-group reveal-up" data-delay="340">
+              <a href="assets/resume/Karthikeyan_Resume.pdf" download="Karthikeyan_Resume.pdf" class="btn btn-glow-orange btn-lg">
+                <i class="bi bi-file-earmark-arrow-down me-2"></i>Download Resume
+              </a>
+              <a href="#projects" class="btn btn-glow-cyan btn-lg">
+                <i class="bi bi-grid-3x3-gap me-2"></i>Explore Projects
+              </a>
+              <a href="#contact" class="btn btn-outline-glass btn-lg">
+                <i class="bi bi-send me-2"></i>Contact
+              </a>
+            </div>
+
+            <!-- Social Links & Verified Metrics Strip -->
+            <div class="hero-bottom-bar reveal-up" data-delay="400">
+              <div class="hero-socials">
+                <a href="https://github.com/Karthi0609" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GitHub Profile">
+                  <i class="bi bi-github"></i>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/karthikeyan-sailappan/" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn Profile">
+                  <i class="bi bi-linkedin"></i>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+
+              <div class="hero-verified-stats" aria-label="Verified Portfolio Statistics">
+                <div class="stat-chip">
+                  <span class="stat-num font-display"><span class="counter" data-target="2">0</span><span class="text-accent-orange">~</span></span>
+                  <span class="stat-label">Yrs Exp</span>
+                </div>
+                <div class="stat-divider" aria-hidden="true"></div>
+                <div class="stat-chip">
+                  <span class="stat-num font-display"><span class="counter" data-target="3">0</span></span>
+                  <span class="stat-label">Companies</span>
+                </div>
+                <div class="stat-divider" aria-hidden="true"></div>
+                <div class="stat-chip">
+                  <span class="stat-num font-display"><span class="counter" data-target="5">0</span></span>
+                  <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider" aria-hidden="true"></div>
+                <div class="stat-chip">
+                  <span class="stat-num font-display"><span class="counter" data-target="22">0</span></span>
+                  <span class="stat-label">Skills</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero 3D Profile Image Frame -->
+          <div class="col-lg-5 order-1 order-lg-2">
+            <div class="hero-3d-stage reveal-up" data-delay="180">
+              <div class="profile-3d-frame tilt-card" data-tilt-max="12">
+                <!-- Rotating Orbital Rings -->
+                <div class="orbital-ring ring-outer" aria-hidden="true"></div>
+                <div class="orbital-ring ring-inner" aria-hidden="true"></div>
+                <div class="frame-corner corner-tl" aria-hidden="true"></div>
+                <div class="frame-corner corner-tr" aria-hidden="true"></div>
+                <div class="frame-corner corner-bl" aria-hidden="true"></div>
+                <div class="frame-corner corner-br" aria-hidden="true"></div>
+
+                <!-- Profile Portrait Container -->
+                <div class="profile-glass-shell">
+                  <div class="profile-photo-wrap">
+                    <img
+                      src="assets/images/profile.jpg"
+                      alt="Karthikeyan S - Java Backend Developer"
+                      class="profile-photo"
+                      width="420"
+                      height="420"
+                    />
+                    <div class="profile-scanline" aria-hidden="true"></div>
+                  </div>
+                  <div class="profile-id-bar">
+                    <div>
+                      <span class="d-block font-display fw-bold text-white">Karthikeyan S</span>
+                      <span class="d-block font-mono small text-accent-cyan">Java &bull; Spring Boot &bull; MySQL</span>
+                    </div>
+                    <span class="badge-verified" title="Immediate Joiner">
+                      <i class="bi bi-lightning-charge-fill"></i> Ready
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Floating 3D Tech Nodes -->
+                <div class="floating-3d-chip chip-java" aria-hidden="true">
+                  <i class="bi bi-filetype-java text-accent-orange"></i>
+                  <span>Java 8</span>
+                </div>
+                <div class="floating-3d-chip chip-spring" aria-hidden="true">
+                  <i class="bi bi-hdd-network text-accent-cyan"></i>
+                  <span>Spring Boot</span>
+                </div>
+                <div class="floating-3d-chip chip-mysql" aria-hidden="true">
+                  <i class="bi bi-database-check text-accent-violet"></i>
+                  <span>MySQL / JPA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <span class="scroll-mouse"><span class="scroll-wheel"></span></span>
+        <span class="font-mono small">SCROLL</span>
+      </a>
+    </section>
+
+    <!-- ==================== ABOUT ME SECTION ==================== -->
+    <section id="about" class="section-pad">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-eyebrow font-mono"><span class="text-accent-orange">01 //</span> ABOUT ME</span>
+          <h2 class="section-title">Engineering Reliable <span class="text-gradient-cool">Server-Side</span> Foundations</h2>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <!-- Narrative Column -->
+          <div class="col-lg-7 reveal-up" data-delay="80">
+            <div class="glass-panel p-4 p-md-5 h-100 tilt-card" data-tilt-max="5">
+              <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-4">
+                <span class="chip-tag chip-orange"><i class="bi bi-cpu me-1"></i>Backend Architecture</span>
+                <span class="font-mono small text-muted-custom">~2 Years Professional Experience</span>
+              </div>
+
+              <p class="lead-editorial mb-4">
+                I&rsquo;m <strong>Karthikeyan S</strong>, a Java Backend Developer with approximately 2 years of hands-on experience designing, developing, and deploying production backend applications.
+              </p>
+
+              <p class="text-body-custom mb-4">
+                My core engineering focus spans <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>REST APIs</strong>, <strong>Hibernate/JPA</strong>, and <strong>MySQL</strong>. Across multi-role engineering teams, I&rsquo;ve built clean service layers, implemented secure <strong>authentication and authorization</strong> mechanisms, integrated external and internal APIs, and managed application deployments on <strong>Linux</strong> servers.
+              </p>
+
+              <div class="row g-3 mt-2">
+                <div class="col-sm-6">
+                  <div class="pillar-box">
+                    <i class="bi bi-shield-lock text-accent-orange"></i>
+                    <div>
+                      <h3 class="h6 mb-1">Auth &amp; Security</h3>
+                      <p class="small text-muted-custom mb-0">Role-based authentication, authorization &amp; secure endpoint design.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="pillar-box">
+                    <i class="bi bi-diagram-3 text-accent-cyan"></i>
+                    <div>
+                      <h3 class="h6 mb-1">API Integration</h3>
+                      <p class="small text-muted-custom mb-0">Clean RESTful contracts, Postman validation &amp; seamless integrations.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="pillar-box">
+                    <i class="bi bi-database-gear text-accent-violet"></i>
+                    <div>
+                      <h3 class="h6 mb-1">ORM &amp; MySQL</h3>
+                      <p class="small text-muted-custom mb-0">Relational schema design, SQL optimization &amp; Hibernate/JPA mapping.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="pillar-box">
+                    <i class="bi bi-terminal-split text-accent-orange"></i>
+                    <div>
+                      <h3 class="h6 mb-1">Linux Deployment</h3>
+                      <p class="small text-muted-custom mb-0">Server provisioning, log inspection &amp; release support via Linux &amp; PuTTY.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Code / Architecture Terminal Column -->
+          <div class="col-lg-5 reveal-up" data-delay="160">
+            <div class="terminal-window h-100 tilt-card" data-tilt-max="6">
+              <div class="terminal-header">
+                <div class="terminal-dots" aria-hidden="true">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
+                </div>
+                <span class="font-mono small text-muted-custom">BackendProfile.java</span>
+                <span class="font-mono xsmall text-accent-cyan">Java 8 / Spring Boot</span>
+              </div>
+              <div class="terminal-body font-mono">
+<pre class="code-block mb-0"><code><span class="tok-kw">@RestController</span>
+<span class="tok-kw">@RequestMapping</span>(<span class="tok-str">"/api/v1/developer"</span>)
+<span class="tok-kw">public class</span> <span class="tok-type">KarthikeyanProfile</span> {
+
+  <span class="tok-kw">private final</span> <span class="tok-type">String</span> role =
+      <span class="tok-str">"Java Backend Developer"</span>;
+  <span class="tok-kw">private final</span> <span class="tok-type">String</span> experience = <span class="tok-str">"~2 Years"</span>;
+  <span class="tok-kw">private final</span> <span class="tok-type">boolean</span> immediateJoiner = <span class="tok-num">true</span>;
+
+  <span class="tok-kw">@GetMapping</span>(<span class="tok-str">"/stack"</span>)
+  <span class="tok-kw">public</span> <span class="tok-type">List&lt;String&gt;</span> coreStack() {
+    <span class="tok-kw">return</span> Arrays.asList(
+      <span class="tok-str">"Java 8"</span>, <span class="tok-str">"Spring Boot"</span>,
+      <span class="tok-str">"Hibernate/JPA"</span>, <span class="tok-str">"REST APIs"</span>,
+      <span class="tok-str">"MySQL"</span>, <span class="tok-str">"Linux Deployment"</span>
+    );
+  }
+}</code></pre>
+              </div>
+              <div class="terminal-footer">
+                <span class="font-mono xsmall text-muted-custom"><i class="bi bi-check-circle-fill text-accent-cyan me-1"></i>Status: Open for Backend Opportunities</span>
+                <a href="#contact" class="font-mono xsmall text-accent-orange text-decoration-none">Connect &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TECHNICAL SKILLS SECTION ==================== -->
+    <section id="skills" class="section-pad">
+      <div class="container">
+        <div class="section-header d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 reveal-up">
+          <div>
+            <span class="section-eyebrow font-mono"><span class="text-accent-cyan">02 //</span> TECHNICAL ARSENAL</span>
+            <h2 class="section-title mb-0">Core Stack &amp; <span class="text-gradient-warm">AI-Augmented</span> Tooling</h2>
+          </div>
+          <!-- Skill Category Filter -->
+          <div class="filter-pills" role="tablist" aria-label="Filter technical skills">
+            <button type="button" class="filter-btn active" data-skill-filter="all">All (22)</button>
+            <button type="button" class="filter-btn" data-skill-filter="backend">Backend &amp; Data</button>
+            <button type="button" class="filter-btn" data-skill-filter="frontend">Frontend</button>
+            <button type="button" class="filter-btn" data-skill-filter="devops">Tools &amp; Linux</button>
+            <button type="button" class="filter-btn" data-skill-filter="ai">AI &amp; Automation</button>
+          </div>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Rendered / Enhanced via HTML + JS interactivity -->
+          <!-- Backend & Data -->
+          <article class="skill-card tilt-card reveal-up" data-category="backend" data-tilt-max="10" tabindex="0">
+            <div class="skill-glow"></div>
+            <div class="skill-icon icon-orange"><i class="bi bi-filetype-java"></i></div>
+            <h3 class="skill-name">Java 8</h3>
+            <span class="skill-cat font-mono">Core Language</span>
+          </article>
+
+          <article class="skill-card tilt-card reveal-up" data-category="backend" data-tilt-max="10" tabindex="0">
+            <div class="skill-glow"></div>
+            <div class="skill-icon icon-cyan"><i class="bi bi-lightning-charge"></i></div>
+            <h3 class="skill-name">Spring Boot</h3>
+            <span class="skill-cat font-mono">Backend Framework</span>
+          </article>
+
+          <article class="skill-card tilt-card reveal-up" data-category="backend" data-tilt-max="10" tabindex="0">
+            <div class="skill-glow"></div>
+            <div class="skill-icon icon-violet"><i class="bi bi-layers"></i></div>
+            <h3 class="skill-name">Spring MVC</h3>
+            <span class="skill-cat font-mono">Web Architecture</span>
+          </article>
+
+          <article class="skill-card tilt-card reveal-up" data-category="backend" data-tilt-max="10" tabindex="0">
+            <div class="skill-glow"></div>
+            <div class="skill-icon icon-orange"><i class="bi bi-diagram-2"></i></div>
+            <h3 class="skill-name">Hibernate / JPA</h3>
+            <span class="skill-cat font-mono">ORM &amp; Persistence</span>
+          </article>
+
+          <article class="skill-card tilt-card reveal-up" data-category="backend" data-tilt-max="10" tabindex="0">
+            <div class="skill-glow"></div>
+            <div class="skill-icon icon-cyan"><i class="bi bi-braces-asterisk"></i></div>
+            <h3 class="skill-name">REST APIs</h3>
+            <span class="skill-cat font-mono">Service Contracts</span>
+          </article>
+
+          <article class="skill-card tilt-card reveal-up" data-category="backend" data-tilt-max="10" tabindex="0">
+            <div class="skill-glow"></div>
+            <div class="skill-icon icon-violet"><i class="bi bi-database"></i></div>
+            <h3 class="skill-name">MySQL</h3>
+            <span class="skill-cat font-mono">Relational Database</span>
+          </article>
+
+          <article class="skill-card tilt-card reveal-up" data-category="backend" data-tilt-max="10" tabindex="0">
+            <div class="skill-glow"></div>
+            <div class="skill-icon icon-cyan"><i class="bi bi-table"></i></div>
+            <h3 class="skill-name">SQL</h3>
+            <span class="skill-cat font-mono">Query Engineering</span>
+          </article>
+
+          <!-- Frontend -->
+          <article class="skill-card tilt-card reveal-up" data-category="frontend" data-tilt-max="10" tabindex="0">
+            <div class="skill-glow"></div>
+            <div class="skill-icon icon-orange"><i class="bi bi-filetype-js"></i></div>
+            <h3 class="skill-name">JavaScript</h3>
+            <span class="skill-cat font-mono">Client Scripting</span>
+          </article>
+
+          <article class="skill-card tilt-card reveal-up" data-category="frontend" data-tilt-max="10" tabindex="0">
+            <div class="skill-glow"></div>
+            <div class="skill-icon icon-orange"><i class="bi bi-filetype-html"></i></div>
+            <h3 class="skill-name">HTML5</h3>
+            <span class="skill-cat font-mono">Semantic Markup</span>
+          </article>
+
+          <article class="skill-card tilt-card reveal-up" data-category="frontend" data-tilt-max="10" tabindex="0">
+            <div class="skill-glow"></div>
+            <div class="skill-icon icon-cyan"><i class="bi bi-filetype-css"></i></div>
+            <h3 class="skill-name">CSS3</h3>
+            <span class="skill-cat font-mono">Modern Styling</span>
+          </article>
+
+          <article class="skill-card tilt-card reveal-up" data-category="frontend" data-tilt-max="10" tabindex="0">
+            <div class="skill-glow"></div>
+            <div class="skill-icon icon-violet"><i class="bi bi-bootstrap"></i></div>
+            <h3 class="skill-name">Bootstrap 5</h3>
+            <span class="skill-cat font-mono">Responsive UI</span>
+          </article>
+
+          <!-- Tools & Linux -->
+          <article class="skill-card tilt-card reveal-up" data-category="devops" data-tilt-max="10" tabindex="0">
+            <div class="skill-glow"></div>
+            <div class="skill-icon icon-orange"><i class="bi bi-git"></i></div>
+            <h3 class="skill-name">Git</h3>
+            <span class="skill-cat font-mono">Version Control</span>
+          </article>
+
+          <article class="skill-card tilt-card reveal-up" data-category="devops" data-tilt-max="10" tabindex="0">
+            <div class="skill-glow"></div>
+            <div class="skill-icon icon-cyan"><i class="bi bi-box-seam"></i></div>
+            <h3 class="skill-name">Maven</h3>
+            <span class="skill-cat font-mono">Build Management</span>
+          </article>
+
+          <article class="skill-card tilt-card reveal-up" data-category="devops" data-tilt-max="10" tabindex="0">
+            <div class="skill-glow"></div>
+            <div class="skill-icon icon-orange"><i class="bi bi-send-check"></i></div>
+            <h3 class="skill-name">Postman</h3>
+            <span class="skill-cat font-mono">API Testing</span>
+          </article>
+
+          <article class="skill-card tilt-card reveal-up" data-category="devops" data-tilt-max="10" tabindex="0">
+            <div class="skill-glow"></div>
+            <div class="skill-icon icon-cyan"><i class="bi bi-kanban"></i></div>
+            <h3 class="skill-name">JIRA</h3>
+            <span class="skill-cat font-mono">Agile Tracking</span>
+          </article>
+
+          <article class="skill-card tilt-card reveal-up" data-category="devops" data-tilt-max="10" tabindex="0">
+            <div class="skill-glow"></div>
+            <div class="skill-icon icon-violet"><i class="bi bi-ubuntu"></i></div>
+            <h3 class="skill-name">Linux</h3>
+            <span class="skill-cat font-mono">Server Deployment</span>
+          </article>
+
+          <article class="skill-card tilt-card reveal-up" data-category="devops" data-tilt-max="10" tabindex="0">
+            <div class="skill-glow"></div>
+            <div class="skill-icon icon-cyan"><i class="bi bi-terminal"></i></div>
+            <h3 class="skill-name">PuTTY</h3>
+            <span class="skill-cat font-mono">SSH &amp; Remote Ops</span>
+          </article>
+
+          <!-- AI & Automation -->
+          <article class="skill-card tilt-card reveal-up" data-category="ai" data-tilt-max="10" tabindex="0">
+            <div class="skill-glow"></div>
+            <div class="skill-icon icon-violet"><i class="bi bi-cursor"></i></div>
+            <h3 class="skill-name">Cursor</h3>
+            <span class="skill-cat font-mono">AI Code Editor</span>
+          </article>
+
+          <article class="skill-card tilt-card reveal-up" data-category="ai" data-tilt-max="10" tabindex="0">
+            <div class="skill-glow"></div>
+            <div class="skill-icon icon-orange"><i class="bi bi-code-square"></i></div>
+            <h3 class="skill-name">Claude Code</h3>
+            <span class="skill-cat font-mono">Agentic Coding</span>
+          </article>
+
+          <article class="skill-card tilt-card reveal-up" data-category="ai" data-tilt-max="10" tabindex="0">
+            <div class="skill-glow"></div>
+            <div class="skill-icon icon-cyan"><i class="bi bi-stars"></i></div>
+            <h3 class="skill-name">Google Antigravity</h3>
+            <span class="skill-cat font-mono">Agentic Workspace</span>
+          </article>
+
+          <article class="skill-card tilt-card reveal-up" data-category="ai" data-tilt-max="10" tabindex="0">
+            <div class="skill-glow"></div>
+            <div class="skill-icon icon-orange"><i class="bi bi-diagram-3-fill"></i></div>
+            <h3 class="skill-name">n8n</h3>
+            <span class="skill-cat font-mono">Workflow Automation</span>
+          </article>
+
+          <article class="skill-card tilt-card reveal-up" data-category="ai" data-tilt-max="10" tabindex="0">
+            <div class="skill-glow"></div>
+            <div class="skill-icon icon-violet"><i class="bi bi-cpu-fill"></i></div>
+            <h3 class="skill-name">Generative AI Fundamentals</h3>
+            <span class="skill-cat font-mono">AI Engineering</span>
+          </article>
+        </div>
+
+        <!-- Skill Inspector Bar -->
+        <div class="skill-inspector glass-panel mt-4 p-3 p-md-4 reveal-up" id="skillInspector" aria-live="polite">
+          <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+            <div class="d-flex align-items-center gap-3">
+              <span class="inspector-badge font-mono">SKILL INSPECTOR</span>
+              <span id="inspectorTitle" class="fw-semibold text-white">Click or hover any skill card</span>
+            </div>
+            <span id="inspectorDesc" class="small text-muted-custom">Explore how each technology powers backend reliability, API workflows, and delivery.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE SECTION ==================== -->
+    <section id="experience" class="section-pad">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-eyebrow font-mono"><span class="text-accent-violet">03 //</span> CAREER TIMELINE</span>
+          <h2 class="section-title">Professional <span class="text-gradient-tri">Experience</span></h2>
+        </div>
+
+        <div class="row g-4 align-items-start">
+          <!-- Interactive Timeline Selector (Left Spine) -->
+          <div class="col-lg-5 reveal-up" data-delay="80">
+            <div class="timeline-spine-wrap" id="timelineNav" role="tablist" aria-label="Career Experience Roles">
+              <div class="timeline-track-line" aria-hidden="true">
+                <div class="timeline-track-progress" id="timelineProgress"></div>
+              </div>
+
+              <button type="button" class="timeline-node active" data-exp-index="0" role="tab" aria-selected="true">
+                <span class="node-marker"><span class="node-pulse"></span></span>
+                <span class="node-content">
+                  <span class="node-period font-mono">May 2026 &ndash; Present</span>
+                  <span class="node-company">Techsphere Consultancy Services</span>
+                  <span class="node-role">Software Developer</span>
+                </span>
+                <span class="badge-live">Current</span>
+              </button>
+
+              <button type="button" class="timeline-node" data-exp-index="1" role="tab" aria-selected="false">
+                <span class="node-marker"></span>
+                <span class="node-content">
+                  <span class="node-period font-mono">November 2025 &ndash; May 2026</span>
+                  <span class="node-company">Effitrix Systems Pvt. Ltd.</span>
+                  <span class="node-role">Software Developer</span>
+                </span>
+              </button>
+
+              <button type="button" class="timeline-node" data-exp-index="2" role="tab" aria-selected="false">
+                <span class="node-marker"></span>
+                <span class="node-content">
+                  <span class="node-period font-mono">December 2024 &ndash; October 2025</span>
+                  <span class="node-company">Inovatrik Technologies</span>
+                  <span class="node-role">Java Developer</span>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Interactive Experience Detail Panel (Right) -->
+          <div class="col-lg-7 reveal-up" data-delay="160">
+            <div class="glass-panel exp-detail-card p-4 p-md-5 tilt-card" id="expDetailCard" data-tilt-max="4" role="tabpanel">
+              <div class="d-flex justify-content-between align-items-start flex-wrap gap-3 mb-3">
+                <div>
+                  <span class="chip-tag chip-cyan font-mono mb-2" id="expPeriodBadge">May 2026 &ndash; Present</span>
+                  <h3 class="h3 fw-bold text-white mb-1" id="expRoleTitle">Software Developer</h3>
+                  <div class="d-flex flex-wrap align-items-center gap-2">
+                    <p class="text-accent-orange fw-medium mb-0" id="expCompanyName">Techsphere Consultancy Services</p>
+                    <a href="https://techsphereconsultancy.com/" target="_blank" rel="noopener noreferrer" id="expCompanyLink" class="font-mono xsmall text-accent-cyan text-decoration-none d-inline-flex align-items-center gap-1">
+                      <span>techsphereconsultancy.com</span>
+                      <i class="bi bi-box-arrow-up-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="exp-step-indicator font-mono" id="expStepIndex">01 / 03</div>
+              </div>
+
+              <p class="text-body-custom my-4" id="expSummary">
+                Developing and maintaining scalable backend services and RESTful APIs using Java and Spring Boot, ensuring clean data persistence, secure access controls, and production stability.
+              </p>
+
+              <h4 class="font-mono small text-uppercase text-muted-custom mb-3">Core Engineering Focus</h4>
+              <ul class="exp-highlights list-unstyled mb-4" id="expHighlights">
+                <li><i class="bi bi-check2-circle text-accent-cyan"></i><span>Designing modular Spring Boot backend services and clean REST API endpoints.</span></li>
+                <li><i class="bi bi-check2-circle text-accent-cyan"></i><span>Managing relational persistence with Hibernate/JPA and MySQL.</span></li>
+                <li><i class="bi bi-check2-circle text-accent-cyan"></i><span>Implementing authentication, authorization, and third-party API integrations.</span></li>
+                <li><i class="bi bi-check2-circle text-accent-cyan"></i><span>Supporting Linux server deployments and API verification via Postman &amp; Git workflows.</span></li>
+              </ul>
+
+              <div class="d-flex flex-wrap gap-2" id="expTags">
+                <span class="tech-tag">Java 8</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">REST APIs</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Hibernate/JPA</span>
+                <span class="tech-tag">Linux</span>
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center mt-4 pt-3 border-top border-subtle">
+                <button type="button" class="btn btn-sm btn-outline-glass" id="expPrevBtn"><i class="bi bi-arrow-left me-1"></i>Previous Role</button>
+                <button type="button" class="btn btn-sm btn-outline-glass" id="expNextBtn">Next Role<i class="bi bi-arrow-right ms-1"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURED PROJECTS SECTION ==================== -->
+    <section id="projects" class="section-pad">
+      <div class="container">
+        <div class="section-header d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-3 reveal-up">
+          <div>
+            <span class="section-eyebrow font-mono"><span class="text-accent-orange">04 //</span> SELECTED WORK</span>
+            <h2 class="section-title mb-0">Featured <span class="text-gradient-warm">Projects</span> &amp; Systems</h2>
+          </div>
+
+          <!-- Project Filter Bar -->
+          <div class="filter-pills" role="tablist" aria-label="Filter projects">
+            <button type="button" class="filter-btn active" data-project-filter="all">All (5)</button>
+            <button type="button" class="filter-btn" data-project-filter="implemented">Implemented</button>
+            <button type="button" class="filter-btn" data-project-filter="ongoing">Ongoing / Dev</button>
+            <button type="button" class="filter-btn" data-project-filter="java">Java &amp; Spring Boot</button>
+          </div>
+        </div>
+
+        <div class="row g-4" id="projectsGrid">
+          <!-- Project 1: RYDO -->
+          <div class="col-md-6 col-xl-4 project-item reveal-up" data-tags="implemented java">
+            <article class="project-card tilt-card h-100" data-tilt-max="6" data-project-id="rydo">
+              <div class="project-thumb-wrap">
+                <img src="assets/images/rydo.jpg" alt="RYDO Second-Hand Bike Marketplace interface preview" class="project-thumb" loading="lazy" width="640" height="360" />
+                <span class="project-status status-complete">Implemented</span>
+              </div>
+              <div class="project-body">
+                <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+                  <h3 class="project-title">RYDO &ndash; Second-Hand Bike Marketplace</h3>
+                </div>
+                <p class="project-desc">
+                  Backend-powered two-wheeler marketplace supporting bike listings, structured search filtering, buyer-seller workflows, and RESTful APIs backed by MySQL.
+                </p>
+                <div class="project-tech-stack mb-4">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">Hibernate/JPA</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">REST APIs</span>
+                </div>
+                <div class="project-actions">
+                  <button type="button" class="btn btn-sm btn-glow-orange view-project-btn" data-project="rydo">
+                    View Details <i class="bi bi-arrows-fullscreen ms-1"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 2: Kirusa Celebrity Booking Platform -->
+          <div class="col-md-6 col-xl-4 project-item reveal-up" data-tags="implemented java" data-delay="80">
+            <article class="project-card tilt-card h-100" data-tilt-max="6" data-project-id="kirusa">
+              <div class="project-thumb-wrap">
+                <img src="assets/images/kirusa.jpg" alt="Kirusa Celebrity Booking Platform dashboard preview" class="project-thumb" loading="lazy" width="640" height="360" />
+                <span class="project-status status-complete">Implemented</span>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Kirusa Celebrity Booking Platform</h3>
+                <p class="project-desc">
+                  Scalable talent and celebrity booking backend enabling availability management, booking workflows, profile persistence, and relational data integrity.
+                </p>
+                <div class="project-tech-stack mb-4">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">Hibernate</span>
+                  <span class="tech-tag">MySQL</span>
+                </div>
+                <div class="project-actions">
+                  <button type="button" class="btn btn-sm btn-glow-orange view-project-btn" data-project="kirusa">
+                    View Details <i class="bi bi-arrows-fullscreen ms-1"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 3: Pensioner Management System -->
+          <div class="col-md-6 col-xl-4 project-item reveal-up" data-tags="implemented java" data-delay="160">
+            <article class="project-card tilt-card h-100" data-tilt-max="6" data-project-id="pensioner">
+              <div class="project-thumb-wrap">
+                <img src="assets/images/pensioner.jpg" alt="Pensioner Management System secure portal preview" class="project-thumb" loading="lazy" width="640" height="360" />
+                <span class="project-status status-complete">Implemented</span>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Pensioner Management System</h3>
+                <p class="project-desc">
+                  Secure Java record-management application featuring structured database management, role-based authentication, and automated email notifications.
+                </p>
+                <div class="project-tech-stack mb-4">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">Database Mgmt</span>
+                  <span class="tech-tag">Authentication</span>
+                  <span class="tech-tag">Email Alerts</span>
+                </div>
+                <div class="project-actions">
+                  <button type="button" class="btn btn-sm btn-glow-orange view-project-btn" data-project="pensioner">
+                    View Details <i class="bi bi-arrows-fullscreen ms-1"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 4: XL Fashion Trends – Billing Management System -->
+          <div class="col-md-6 col-xl-6 project-item reveal-up" data-tags="ongoing java">
+            <article class="project-card tilt-card h-100" data-tilt-max="5" data-project-id="xl-fashion">
+              <div class="project-thumb-wrap">
+                <img src="assets/images/xl-fashion.jpg" alt="XL Fashion Trends Billing Management System preview" class="project-thumb" loading="lazy" width="640" height="360" />
+                <span class="project-status status-ongoing">Core Live &bull; Ongoing Enhancements</span>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">XL Fashion Trends &ndash; Billing Management System</h3>
+                <p class="project-desc">
+                  Retail billing management solution with implemented itemized invoice generation and customer billing records, while extended analytics &amp; stock modules remain ongoing work.
+                </p>
+                <div class="project-scope-split mb-3">
+                  <span class="scope-badge scope-done"><i class="bi bi-check-circle me-1"></i>Implemented: Core Billing &amp; Invoices</span>
+                  <span class="scope-badge scope-wip"><i class="bi bi-hourglass-split me-1"></i>Ongoing: Extended Modules</span>
+                </div>
+                <div class="project-tech-stack mb-4">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">Billing Workflows</span>
+                </div>
+                <div class="project-actions">
+                  <button type="button" class="btn btn-sm btn-glow-cyan view-project-btn" data-project="xl-fashion">
+                    View Details <i class="bi bi-arrows-fullscreen ms-1"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 5: AI Job Hunter – Job Application Automation -->
+          <div class="col-md-6 col-xl-6 project-item reveal-up" data-tags="ongoing" data-delay="80">
+            <article class="project-card tilt-card h-100" data-tilt-max="5" data-project-id="ai-job-hunter">
+              <div class="project-thumb-wrap">
+                <img src="assets/images/ai-job-hunter.jpg" alt="AI Job Hunter Job Application Automation preview" class="project-thumb" loading="lazy" width="640" height="360" />
+                <span class="project-status status-dev">Under Development</span>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">AI Job Hunter &ndash; Job Application Automation</h3>
+                <p class="project-desc">
+                  Intelligent job-application workflow automation currently under active development, combining n8n orchestration and Generative AI fundamentals to streamline job discovery and tracking.
+                </p>
+                <div class="project-scope-split mb-3">
+                  <span class="scope-badge scope-wip"><i class="bi bi-tools me-1"></i>Status: Actively Under Development</span>
+                </div>
+                <div class="project-tech-stack mb-4">
+                  <span class="tech-tag">n8n</span>
+                  <span class="tech-tag">Generative AI</span>
+                  <span class="tech-tag">REST APIs</span>
+                  <span class="tech-tag">Automation</span>
+                </div>
+                <div class="project-actions">
+                  <button type="button" class="btn btn-sm btn-glow-cyan view-project-btn" data-project="ai-job-hunter">
+                    View Details <i class="bi bi-arrows-fullscreen ms-1"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION & RESUME CTA SECTION ==================== -->
+    <section id="education" class="section-pad">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-eyebrow font-mono"><span class="text-accent-cyan">05 //</span> ACADEMIC FOUNDATION</span>
+          <h2 class="section-title">Education &amp; <span class="text-gradient-cool">Credentials</span></h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 reveal-up" data-delay="60">
+            <article class="edu-card glass-panel p-4 p-md-5 h-100 tilt-card" data-tilt-max="7">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="edu-icon icon-orange"><i class="bi bi-mortarboard-fill"></i></div>
+                <span class="edu-year font-mono">2024</span>
+              </div>
+              <span class="font-mono xsmall text-accent-orange text-uppercase">Postgraduate Degree</span>
+              <h3 class="h4 fw-bold text-white mt-1 mb-2">Master of Computer Applications (MCA)</h3>
+              <p class="text-body-custom mb-0">Manonmaniam Sundaranar University</p>
+            </article>
+          </div>
+
+          <div class="col-md-6 reveal-up" data-delay="140">
+            <article class="edu-card glass-panel p-4 p-md-5 h-100 tilt-card" data-tilt-max="7">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="edu-icon icon-cyan"><i class="bi bi-book-half"></i></div>
+                <span class="edu-year font-mono">2022</span>
+              </div>
+              <span class="font-mono xsmall text-accent-cyan text-uppercase">Undergraduate Degree</span>
+              <h3 class="h4 fw-bold text-white mt-1 mb-2">Bachelor of Computer Applications (BCA)</h3>
+              <p class="text-body-custom mb-0">Sri Paramakalyani College</p>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICATES SECTION ==================== -->
+    <section id="certificates" class="section-pad">
+      <div class="container">
+        <div class="section-header d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-2 reveal-up">
+          <div>
+            <span class="section-eyebrow font-mono"><span class="text-accent-orange">06 //</span> VERIFIED CREDENTIALS</span>
+            <h2 class="section-title mb-0">Training &amp; Project <span class="text-gradient-warm">Certificates</span></h2>
+          </div>
+          <span class="font-mono small text-muted-custom">Click any certificate to inspect full view</span>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-sm-6 col-lg-3 reveal-up" data-delay="40">
+              <article class="cert-card tilt-card h-100" data-tilt-max="6">
+                <button
+                  type="button"
+                  class="cert-trigger"
+                  data-cert-img="certificates/jspiders-java-fullstack-certificate.webp"
+                  data-cert-title="Core Java, SQL, Web Technology &amp; Advance Java"
+                  data-cert-issuer="JSpiders Software Training Institute &bull; Velachery"
+                  data-cert-meta="Granted On 20/05/2025"
+                >
+                  <div class="cert-thumb-wrap">
+                    <img src="certificates/jspiders-java-fullstack-certificate.webp" alt="JSpiders Core Java, SQL, Web Technology and Advance Java Certificate" class="cert-thumb" loading="lazy" />
+                    <span class="cert-zoom-badge"><i class="bi bi-zoom-in"></i></span>
+                  </div>
+                  <div class="cert-body">
+                    <span class="font-mono xsmall text-accent-orange d-block mb-1">May 2025</span>
+                    <h4 class="cert-title">Core Java, SQL, Web Technology &amp; Advance Java</h4>
+                    <p class="cert-issuer mb-0">JSpiders Software Training Institute</p>
+                  </div>
+                </button>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-3 reveal-up" data-delay="80">
+              <article class="cert-card tilt-card h-100" data-tilt-max="6">
+                <button
+                  type="button"
+                  class="cert-trigger"
+                  data-cert-img="certificates/msu-pensioners-management-project-certificate.webp"
+                  data-cert-title="MCA Major Project &ndash; Pensioners Management System"
+                  data-cert-issuer="Manonmaniam Sundaranar University &bull; Dept. of CSE"
+                  data-cert-meta="Issued 19/07/2024 &bull; Installed at University Admin Section"
+                >
+                  <div class="cert-thumb-wrap">
+                    <img src="certificates/msu-pensioners-management-project-certificate.webp" alt="Manonmaniam Sundaranar University Pensioners Management System Project Certificate" class="cert-thumb cert-thumb-top" loading="lazy" />
+                    <span class="cert-zoom-badge"><i class="bi bi-zoom-in"></i></span>
+                  </div>
+                  <div class="cert-body">
+                    <span class="font-mono xsmall text-accent-cyan d-block mb-1">July 2024</span>
+                    <h4 class="cert-title">MCA Project: Pensioners Management System</h4>
+                    <p class="cert-issuer mb-0">Manonmaniam Sundaranar University</p>
+                  </div>
+                </button>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-3 reveal-up" data-delay="120">
+              <article class="cert-card tilt-card h-100" data-tilt-max="6">
+                <button
+                  type="button"
+                  class="cert-trigger"
+                  data-cert-img="certificates/wintech-java-2-se-certificate.webp"
+                  data-cert-title="Certificate in Java 2 SE Programming (3 Months)"
+                  data-cert-issuer="Wintech Computer &amp; Robotics Education &bull; Tirunelveli"
+                  data-cert-meta="Issued 11/06/2024 &bull; Grade: A+"
+                >
+                  <div class="cert-thumb-wrap">
+                    <img src="certificates/wintech-java-2-se-certificate.webp" alt="Wintech Java 2 SE Programming Certificate" class="cert-thumb cert-thumb-top" loading="lazy" />
+                    <span class="cert-zoom-badge"><i class="bi bi-zoom-in"></i></span>
+                  </div>
+                  <div class="cert-body">
+                    <span class="font-mono xsmall text-accent-violet d-block mb-1">June 2024 &bull; Grade A+</span>
+                    <h4 class="cert-title">Java 2 SE Programming (3 Months)</h4>
+                    <p class="cert-issuer mb-0">Wintech Computer &amp; Robotics Education</p>
+                  </div>
+                </button>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-3 reveal-up" data-delay="160">
+              <article class="cert-card tilt-card h-100" data-tilt-max="6">
+                <button
+                  type="button"
+                  class="cert-trigger"
+                  data-cert-img="certificates/wintech-java-2-se-marksheet.webp"
+                  data-cert-title="Statement of Marks &ndash; Java 2 SE Programming"
+                  data-cert-issuer="Wintech Computer &amp; Robotics Education &bull; Tirunelveli"
+                  data-cert-meta="Issued 11/06/2024 &bull; Theory 86% &bull; Practical 88% (A+)"
+                >
+                  <div class="cert-thumb-wrap">
+                    <img src="certificates/wintech-java-2-se-marksheet.webp" alt="Wintech Java 2 SE Statement of Marks" class="cert-thumb cert-thumb-top" loading="lazy" />
+                    <span class="cert-zoom-badge"><i class="bi bi-zoom-in"></i></span>
+                  </div>
+                  <div class="cert-body">
+                    <span class="font-mono xsmall text-accent-orange d-block mb-1">June 2024 &bull; 86%&ndash;88%</span>
+                    <h4 class="cert-title">Java 2 SE Statement of Marks</h4>
+                    <p class="cert-issuer mb-0">Wintech Computer &amp; Robotics Education</p>
+                  </div>
+                </button>
+              </article>
+            </div>
+          </div>
+
+        <!-- Resume & Profile Banner -->
+        <div class="resume-banner glass-panel p-4 p-md-5 mt-5 reveal-up" data-delay="180">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+              <div class="status-pill mb-3">
+                <span class="status-dot"></span>
+                <span>Available Immediately &bull; Open to Java / Spring Boot Roles</span>
+              </div>
+              <h3 class="h3 fw-bold text-white mb-2">Need a dedicated Java Backend Developer on your engineering team?</h3>
+              <p class="text-body-custom mb-0">
+                Download my latest resume or explore my GitHub and LinkedIn profiles to review my backend experience and project work.
+              </p>
+            </div>
+            <div class="col-lg-4 d-flex flex-wrap justify-content-lg-end gap-2">
+              <a href="assets/resume/Karthikeyan_Resume.pdf" download="Karthikeyan_Resume.pdf" class="btn btn-glow-orange btn-lg">
+                <i class="bi bi-file-earmark-arrow-down me-2"></i>Download Resume
+              </a>
+              <a href="https://github.com/Karthi0609" target="_blank" rel="noopener noreferrer" class="btn btn-outline-glass btn-lg" aria-label="GitHub">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/karthikeyan-sailappan/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-glass btn-lg" aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="section-pad">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-eyebrow font-mono"><span class="text-accent-orange">07 //</span> GET IN TOUCH</span>
+          <h2 class="section-title">Let&rsquo;s Build Something <span class="text-gradient-warm">Scalable</span></h2>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <!-- Direct Contact Cards -->
+          <div class="col-lg-5 reveal-up" data-delay="80">
+            <div class="glass-panel p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="h4 fw-bold text-white mb-3">Direct Channels</h3>
+                <p class="text-body-custom mb-4">
+                  Looking for a Java Backend Developer ready to contribute immediately? Reach out directly via the form or connect on GitHub and LinkedIn.
+                </p>
+
+                <div class="contact-channel-list d-grid gap-3 mb-4">
+                  <div class="channel-card">
+                    <div class="channel-icon icon-orange"><i class="bi bi-lightning-charge-fill"></i></div>
+                    <div>
+                      <span class="font-mono xsmall text-muted-custom d-block">AVAILABILITY</span>
+                      <span class="fw-semibold text-white">Immediate Joiner</span>
+                    </div>
+                  </div>
+
+                  <a href="https://github.com/Karthi0609" target="_blank" rel="noopener noreferrer" class="channel-card text-decoration-none">
+                    <div class="channel-icon icon-cyan"><i class="bi bi-github"></i></div>
+                    <div>
+                      <span class="font-mono xsmall text-muted-custom d-block">GITHUB</span>
+                      <span class="fw-semibold text-white">github.com/Karthi0609</span>
+                    </div>
+                    <i class="bi bi-arrow-up-right ms-auto text-muted-custom"></i>
+                  </a>
+
+                  <a href="https://www.linkedin.com/in/karthikeyan-sailappan/" target="_blank" rel="noopener noreferrer" class="channel-card text-decoration-none">
+                    <div class="channel-icon icon-violet"><i class="bi bi-linkedin"></i></div>
+                    <div>
+                      <span class="font-mono xsmall text-muted-custom d-block">LINKEDIN</span>
+                      <span class="fw-semibold text-white">linkedin.com/in/karthikeyan-sailappan</span>
+                    </div>
+                    <i class="bi bi-arrow-up-right ms-auto text-muted-custom"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="pt-3 border-top border-subtle">
+                <a href="assets/resume/Karthikeyan_Resume.pdf" download="Karthikeyan_Resume.pdf" class="btn btn-outline-glass w-100">
+                  <i class="bi bi-file-earmark-pdf me-2 text-accent-orange"></i>Download PDF Resume
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-lg-7 reveal-up" data-delay="160">
+            <div class="glass-panel p-4 p-md-5 h-100">
+              <form id="contactForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="contactName" class="form-label font-mono small">Your Name <span class="text-accent-orange">*</span></label>
+                    <input type="text" class="form-control glass-input" id="contactName" name="name" placeholder="e.g. Priya Sharma" required minlength="2" />
+                    <div class="invalid-feedback" id="nameError">Please enter your name (at least 2 characters).</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="contactEmail" class="form-label font-mono small">Email Address <span class="text-accent-orange">*</span></label>
+                    <input type="email" class="form-control glass-input" id="contactEmail" name="email" placeholder="you@company.com" required />
+                    <div class="invalid-feedback" id="emailError">Please enter a valid email address.</div>
+                  </div>
+                  <div class="col-12">
+                    <label for="contactSubject" class="form-label font-mono small">Subject <span class="text-accent-orange">*</span></label>
+                    <input type="text" class="form-control glass-input" id="contactSubject" name="subject" placeholder="Backend Developer Opportunity / Project Inquiry" required minlength="3" />
+                    <div class="invalid-feedback" id="subjectError">Please enter a subject (at least 3 characters).</div>
+                  </div>
+                  <div class="col-12">
+                    <label for="contactMessage" class="form-label font-mono small">Message <span class="text-accent-orange">*</span></label>
+                    <textarea class="form-control glass-input" id="contactMessage" name="message" rows="5" placeholder="Tell me about the role, backend stack, or project details..." required minlength="10"></textarea>
+                    <div class="invalid-feedback" id="messageError">Please write a message of at least 10 characters.</div>
+                  </div>
+                  <div class="col-12 d-flex flex-wrap align-items-center justify-content-between gap-3 pt-2">
+                    <span class="font-mono xsmall text-muted-custom"><i class="bi bi-shield-check text-accent-cyan me-1"></i>Client-side validated form</span>
+                    <button type="submit" class="btn btn-glow-orange btn-lg px-4" id="submitContactBtn">
+                      <span class="btn-label">Send Message</span>
+                      <i class="bi bi-send-fill ms-2"></i>
+                    </button>
+                  </div>
+                </div>
+                <div id="formFeedback" class="form-status-box mt-4 d-none" role="alert"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row align-items-center gy-3">
+        <div class="col-md-6 text-center text-md-start">
+          <div class="d-inline-flex align-items-center gap-2">
+            <img src="assets/favicon/favicon-16.png" alt="KS Monogram" width="18" height="18" />
+            <span class="font-display fw-bold text-white">Karthikeyan S</span>
+            <span class="text-muted-custom">&bull;</span>
+            <span class="font-mono small text-muted-custom">Java Backend Developer</span>
+          </div>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p class="small text-muted-custom mb-0">
+            &copy; <span id="currentYear">2026</span> Karthikeyan S. Built with HTML5, CSS3, Bootstrap 5 &amp; Vanilla ES6+.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== PROJECT DETAIL MODAL ==================== -->
+  <div class="modal fade" id="projectDetailModal" tabindex="-1" aria-labelledby="modalProjectTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content glass-modal">
+        <div class="modal-header border-bottom border-subtle">
+          <div>
+            <span class="font-mono xsmall text-accent-cyan d-block mb-1" id="modalProjectStatus">PROJECT ARCHITECTURE</span>
+            <h3 class="modal-title h4 fw-bold text-white" id="modalProjectTitle">Project Title</h3>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close project details"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="modal-thumb-wrap mb-4">
+            <img src="" alt="" id="modalProjectImg" class="img-fluid rounded-3 w-100" />
+          </div>
+          <p class="text-body-custom mb-4" id="modalProjectDesc"></p>
+
+          <div class="row g-3 mb-4" id="modalProjectHighlightsWrap">
+            <div class="col-12">
+              <h4 class="font-mono small text-uppercase text-accent-orange mb-2" id="modalListHeading">Key Features &amp; Architecture</h4>
+              <ul class="exp-highlights list-unstyled mb-0" id="modalProjectFeatures"></ul>
+            </div>
+          </div>
+
+          <div id="modalOngoingNotice" class="alert alert-ongoing d-none mb-4" role="note">
+            <i class="bi bi-info-circle-fill me-2"></i>
+            <span id="modalOngoingText"></span>
+          </div>
+
+          <div>
+            <h4 class="font-mono small text-uppercase text-muted-custom mb-2">Technology Stack</h4>
+            <div class="d-flex flex-wrap gap-2" id="modalProjectTags"></div>
+          </div>
+        </div>
+        <div class="modal-footer border-top border-subtle justify-content-end">
+          <button type="button" class="btn btn-glow-orange" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== CERTIFICATE LIGHTBOX MODAL ==================== -->
+  <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content glass-modal">
+        <div class="modal-header border-bottom border-subtle">
+          <div>
+            <span class="font-mono xsmall text-accent-cyan d-block mb-1" id="certModalMeta">VERIFIED CERTIFICATE</span>
+            <h3 class="modal-title h5 fw-bold text-white" id="certModalTitle">Certificate</h3>
+            <p class="small text-muted-custom mb-0" id="certModalIssuer"></p>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close certificate preview"></button>
+        </div>
+        <div class="modal-body p-3 p-md-4 text-center">
+          <img src="" alt="" id="certModalImg" class="img-fluid rounded-3 cert-modal-img" />
+        </div>
+        <div class="modal-footer border-top border-subtle justify-content-end">
+          <button type="button" class="btn btn-glow-orange" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back-to-Top Button with Scroll Progress Ring -->
+  <button type="button" id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg class="progress-ring" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true">
+      <circle class="progress-ring-bg" cx="24" cy="24" r="20" />
+      <circle class="progress-ring-fill" id="scrollProgressRing" cx="24" cy="24" r="20" />
+    </svg>
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom Vanilla ES6+ Script -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
