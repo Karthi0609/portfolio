@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCustomCursor();
   initAmbientCanvas();
   initHeaderAndScrollSpy();
+  initMobileDrawerNav();
   initTypingEffect();
   initScrollReveal();
   initCounters();
@@ -201,6 +202,47 @@ function initHeaderAndScrollSpy() {
 
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
+}
+
+/* --------------------------------------------------------------------------
+   4b. Mobile Drawer Navigation (Close Offcanvas Before Scrolling)
+   -------------------------------------------------------------------------- */
+function initMobileDrawerNav() {
+  const drawerEl = document.getElementById('mobileNavDrawer');
+  const headerEl = document.getElementById('siteHeader');
+  const links = document.querySelectorAll('#mobileNavDrawer .mobile-nav-link');
+  if (!drawerEl || !links.length) return;
+
+  links.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      if (!href || !href.startsWith('#')) return;
+
+      const target = document.querySelector(href);
+      if (!target) return;
+
+      e.preventDefault();
+
+      const scrollToTarget = () => {
+        if (document.activeElement && document.activeElement.classList.contains('mobile-menu-toggle')) {
+          document.activeElement.blur();
+        }
+        const offset = (headerEl ? headerEl.offsetHeight : 72) + 12;
+        const top = Math.max(0, target.getBoundingClientRect().top + window.scrollY - offset);
+        window.scrollTo({ top, behavior: 'smooth' });
+      };
+
+      if (typeof bootstrap !== 'undefined') {
+        const instance = bootstrap.Offcanvas.getOrCreateInstance(drawerEl);
+        drawerEl.addEventListener('hidden.bs.offcanvas', () => {
+          setTimeout(scrollToTarget, 60);
+        }, { once: true });
+        instance.hide();
+      } else {
+        scrollToTarget();
+      }
+    });
+  });
 }
 
 /* --------------------------------------------------------------------------
